@@ -48,12 +48,10 @@
         app:cardBackgroundColor="@color/white"
         android:layout_marginTop="@dimen/tvTopBottom"
         android:layout_marginEnd="@dimen/tvEnd"
-        android:background="@drawable/z_shape_radius_corner_bs"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_bottom_sheet"
-        android:visibility="visible"
-        android:clickable="true"
-        android:focusable="true">
+        app:cardElevation="50dp"
+        app:cardCornerRadius="20dp">
 
 
     <ImageView
@@ -84,14 +82,14 @@
 
     <LinearLayout
         android:id="@+id/ly_chips"
-        android:layout_width="300dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_tipo_servicio">
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip_fijo"
-            android:layout_width="@dimen/chipWidth_dos"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/tvStartBottom"
             android:layout_marginTop="@dimen/tvTopBottom2"
@@ -112,7 +110,7 @@
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip_semi_movil"
-            android:layout_width="@dimen/chipWidth_dos_semi"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/tvStartBottom"
             android:layout_marginTop="@dimen/tvTopBottom2"
@@ -133,7 +131,7 @@
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip_movil"
-            android:layout_width="@dimen/chipWidth_dos"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/tvStartBottom"
             android:layout_marginTop="@dimen/tvTopBottom2"
@@ -165,20 +163,28 @@
         app:layout_constraintTop_toBottomOf="@+id/ly_chips"
         style="@style/tvBottomSheetStyle"/>
 
-    <Button
-        android:id="@+id/btn_ubicacion_real"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/ubicacion_real"
-        style="@style/z_modal_btn"
-        android:padding="@dimen/tvTop"
-        android:textSize="12dp"
-        android:textColor="@color/ubicacion"
-        android:background="@drawable/z_shape_radius_corner_btn"
-        android:drawableStart="@drawable/ic_location"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvDireccion_neg"
-        app:layout_constraintTop_toBottomOf="@+id/ly_chips" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="110dp"
+        android:layout_height="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDireccion_neg"
+        app:layout_constraintEnd_toEndOf="@+id/card_view"
+        app:layout_constraintTop_toBottomOf="@+id/ly_chips">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imbtn_ubicacion"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_ubicacion"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -389,6 +395,8 @@
         android:layout_marginStart="@dimen/tvStartBottom"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout8" />
 
+
+
     <Button
         android:id="@+id/btnContinuar"
         android:layout_width="match_parent"
@@ -401,6 +409,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/comentario" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width=""
+        android:layout_height=""
+        tools:layout_editor_absoluteX="207dp"
+        tools:layout_editor_absoluteY="99dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -46,5 +46,7 @@
     <color name="ubicacion">#00AC5C</color>
     <color name="ubicacion_fondo">#EBFFE3</color>
 
+    <color name="prueba">#000000</color>
+
 
 </resources>
