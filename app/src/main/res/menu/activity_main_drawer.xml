@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!-- Recurso para agregar mas elementos a la lista de nuestro DrawerLayout -->
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/nav_home_title"
+            android:icon="@drawable/ic_home"/>
+
+        <item
+            android:id="@+id/nav_radio_button"
+            android:title="@string/nav_radio"
+            android:icon="@drawable/ic_radio"/>
+
+        <item
+            android:id="@+id/nav_Life_Cycle"
+            android:title="@string/nav_ciclo_vida"
+            android:icon="@drawable/ic_ciclo_vida"/>
+
+        <item
+            android:id="@+id/nav_Hola_Mundo"
+            android:title="@string/nav_hola_mundo"
+            android:icon="@drawable/ic_hola_mundo"/>
+
+        <item
+            android:id="@+id/nav_recycler_View"
+            android:title="@string/nav_recycler_view"
+            android:icon="@drawable/ic_recycler_view"
+            />
+
+        <item
+            android:id="@+id/nav_maps"
+            android:title="@string/nav_maps"
+            android:icon="@drawable/ic_map"
+            />
+
+        <item
+            android:id="@+id/nav_ubicacion"
+            android:title="@string/nav_ubicacion"
+            android:icon="@drawable/ic_ubicacion"
+            />
+
+        <item
+            android:id="@+id/nav_interfaz"
+            android:title="@string/room"
+            android:icon="@drawable/ic_persona"/>
+
+        <item
+            android:id="@+id/nav_configuration"
+            android:title="@string/confi"
+            android:icon="@drawable/ic_confi"/>
+
+        <item
+            android:id="@+id/nav_z_bottom"
+            android:title="@string/bottom"
+            android:icon="@drawable/ic_buton"/>
+
+        <item
+            android:id="@+id/nav_mi_ruta"
+            android:title="@string/mi_ruta"
+            android:icon="@drawable/ic_ubicacion_ruta"/>
+
+    </group>
+
+</menu>

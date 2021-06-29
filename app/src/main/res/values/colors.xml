@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="azul_claro">#95D0EF</color>
+    <color name="azul_medio">#3F94B5</color>
+    <color name="azul_oscuro">#132893</color>
+
+
+    <color name="rojo">#811323</color>
+    <color name="azul">#152265</color>
+    <color name="verde">#114A14</color>
+    <color name="amarillo">#FFEB3B</color>
+    <color name="rosa">#E86BBE</color>
+    <color name="anaranjado">#C8390C</color>
+    <color name="gris">#313132</color>
+    <color name="morado">#790A8C</color>
+    <color name="verde_claro">#63D867</color>
+    <color name="rosa_fuerte">#FCC51292</color>
+    <color name="cafe">#5E423A</color>
+    <color name="blanco">#FBFBFD</color>
+
+    <color name="colorTexto">#FFFFFF</color>
+    <color name="colorTextoFuerte">#000000</color>
+
+    <color name="grisP">#1A000000</color>
+    <color name="grisPleca">#1A000000</color>
+    <color name="greenBottom">#37C800</color>
+
+    <color name="greenUbicacion">#8ED176</color>
+
+    <color name="Gris">#2E2E2E</color>
+
+    <color name="camara">#5A5A5A</color>
+    <color name="letra">#616060</color>
+    <color name="letraDescripcion">#A3A3A3</color>
+    <color name="cardView">#E5E5E5</color>
+    <color name="tipo">#ADADAD</color>
+    <color name="raya">#707070</color>
+    <color name="ubicacion">#00AC5C</color>
+    <color name="ubicacion_fondo">#EBFFE3</color>
+
+
+</resources>

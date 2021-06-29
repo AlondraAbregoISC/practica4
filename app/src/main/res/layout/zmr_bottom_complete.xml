@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/z_shape_radius_corner"
+    android:paddingTop="@dimen/bottomPadding"
+    android:paddingStart="@dimen/bottomPadding"
+    android:paddingEnd="@dimen/bottomPadding">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/widthPleca"
+        android:layout_height="@dimen/heightPleca"
+        android:layout_marginTop="@dimen/ivPlecaTop"
+        android:background="@color/grisPleca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCompletaDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tvTop"
+        android:text="@string/tvComplete"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/tvStartBottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        style="@style/tvBottomSheetStyle"/>
+
+
+    <TextView
+        android:id="@+id/tvOfrece"
+        style="@style/tvBottomSheetStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/topSheetRadius"
+        android:text="@string/tvOfrecer"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCompletaDatos" />
+
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipProductos"
+        android:layout_width="@dimen/chipWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rvTop"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="@color/z_text_chip_color"
+        android:text="@string/productos"
+        android:textAlignment="center"
+        app:checkedIconEnabled="false"
+        app:chipBackgroundColor="@color/z_background_chip_color"
+        app:chipStrokeColor="@color/z_stroke_chip_color"
+        app:chipStrokeWidth="@dimen/strokeChip"
+        app:layout_constraintStart_toStartOf="@+id/tvCompletaDatos"
+        app:layout_constraintTop_toBottomOf="@+id/tvOfrece" />
+
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipServicios"
+        android:layout_width="@dimen/chipWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rvTop"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="@color/z_text_chip_color"
+        android:text="@string/Servicio"
+        android:textAlignment="center"
+        app:checkedIconEnabled="false"
+        app:chipBackgroundColor="@color/z_background_chip_color"
+        app:chipStrokeColor="@color/z_stroke_chip_color"
+        app:chipStrokeWidth="@dimen/strokeChip"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/chipProductos"
+        app:layout_constraintTop_toBottomOf="@+id/tvOfrece" />
+
+    <TextView
+        android:id="@+id/tvCategoria"
+        style="@style/tvBottomSheetStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvCatedoria"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipServicios" />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategoria"
+        app:layout_constraintStart_toStartOf="@+id/tvCategoria"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEligeDia"
+        style="@style/tvBottomSheetStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvElegir"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipDisponible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rvTop"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Disponible 24/7"
+        android:textAlignment="center"
+        android:textColor="@color/z_text_chip_color"
+        app:checkedIconEnabled="false"
+        app:chipBackgroundColor="@color/z_background_chip_color"
+        app:chipStrokeColor="@color/z_stroke_chip_color"
+        app:chipStrokeWidth="@dimen/strokeChip"
+        app:layout_constraintStart_toStartOf="@+id/tvEligeDia"
+        app:layout_constraintTop_toBottomOf="@+id/tvEligeDia" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipPersonalizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rvTop"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginStart="15dp"
+        android:text="Personalizar"
+        android:textAlignment="center"
+        android:textColor="@color/z_text_chip_color"
+        app:checkedIconEnabled="false"
+        app:chipBackgroundColor="@color/z_background_chip_color"
+        app:chipStrokeColor="@color/z_stroke_chip_color"
+        app:chipStrokeWidth="@dimen/strokeChip"
+        app:layout_constraintStart_toEndOf="@+id/chipDisponible"
+        app:layout_constraintTop_toBottomOf="@+id/tvEligeDia" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/registrar"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/greenBottom"
+        app:layout_constraintTop_toBottomOf="@+id/chipPersonalizar"
+         />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlPrincipal"
+    >
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/radio_title"
+        android:textSize="@dimen/tsTitle"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/titleTop" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/radioTop"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvTitle">
+
+        <RadioButton
+            android:id="@+id/rbRojo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rojo"
+            android:layout_marginTop="@dimen/radio"
+            android:checked="false"
+            android:textColor="@color/texto_selector"/>
+
+        <RadioButton
+            android:id="@+id/rbAzul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/azul"
+            android:layout_marginTop="@dimen/radio"
+            android:checked="false"
+            android:textColor="@color/texto_selector"/>
+
+        <RadioButton
+            android:id="@+id/rbVerde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verde"
+            android:layout_marginTop="@dimen/radio"
+            android:checked="false"
+            android:textColor="@color/texto_selector"/>
+
+        <RadioButton
+            android:id="@+id/rbAmarillo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amarillo"
+            android:layout_marginTop="@dimen/radio"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/rbRosa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rosa"
+            android:layout_marginTop="@dimen/radio"
+            android:checked="false"/>
+        <RadioButton
+            android:id="@+id/rbAnaranjado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anaranjado"
+            android:layout_marginTop="@dimen/radio"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/rbGris"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gris"
+            android:layout_marginTop="@dimen/radio"
+            android:checked="false"
+            android:textColor="@color/texto_selector"/>
+
+        <RadioButton
+            android:id="@+id/rbMorado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/morado"
+            android:layout_marginTop="@dimen/radio"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/rbVerde_claro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verde_claro"
+            android:layout_marginTop="@dimen/radio"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/rbRosa_fuerte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rosa_fuerte"
+            android:layout_marginTop="@dimen/radio"
+            android:checked="false"
+            android:textColor="@color/texto_selector"/>
+
+        <RadioButton
+            android:id="@+id/rbCafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cafe"
+            android:layout_marginTop="@dimen/radio"
+            android:checked="false"
+            android:textColor="@color/texto_selector"/>
+
+        <RadioButton
+            android:id="@+id/rbBlanco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blanco"
+            android:layout_marginTop="@dimen/radio"
+            android:checked="false"/>
+
+    </RadioGroup>
+</RelativeLayout>
